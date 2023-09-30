@@ -1,0 +1,21 @@
+		Git 
+		
+		Ansible
+
+		Jenkins
+
+		Sonarcube
+
+		Docker
+
+		Chef
+
+		Nigos
+
+		Kubernates
+
+		Vigant
+
+		Pupet
+
+
