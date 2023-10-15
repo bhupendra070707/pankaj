@@ -1,0 +1,12 @@
+
+
+ - 
+   name: pb to installion of programes
+   hosts: client1
+   tasks: 
+     -
+       name: pb to install git
+       yum: git
+       state: present
+
+
