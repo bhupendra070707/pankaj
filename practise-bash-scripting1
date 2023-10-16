@@ -1,0 +1,13 @@
+#! /usr/bin/bash
+# program on use casde of reading input data 
+
+echo "enter your id :"
+read sid
+echo "enter your name:"
+read sname
+
+echo "=============output================"
+echo "your ID is $sid"
+echo "your name is $sname"
+
+
