@@ -1,0 +1,17 @@
+MULTIPLE
+
+
+#! /usr/bin/bash
+# program on use case of reading multiple values
+
+echo "enter your ID and Name :"
+read sid sname
+
+echo "Enter your marks in marathi, hindi, maths, and english:"
+read m_marathi m_hindi m_maths m_english
+
+
+echo "=============================output======================================="
+echo "Your ID is $sid and name is $sname"
+echo "marks in marathi is $m_marathi, hindi is $m_hindi, maths is $m_maths, english is $m_english"
+
