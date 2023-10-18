@@ -1,0 +1,27 @@
+#! /usr/bin/bash
+
+# program on use case of arrays concept
+
+read -p 'Enter your id:' id
+read -p 'enter your name:' name
+
+echo "Enetr your mark in subjects - marathi, hindi, english, maths, scince, social:"
+read -a marks
+
+echo "your details"
+
+echo "ID:" $ID
+echo "Name:" $name
+echo "Marks in Marathi:" ${marks[0]}
+echo "Marks in Hindi:" ${Marks[1]}
+echo "Marks in English:" ${Marks[2]}
+echo "Marks in Maths:" ${Marks[3]}
+echo "Marks in Science:" ${Marks[4]}
+echo "Marks in Social:" ${Marks[5]}
+
+echo "to print all elements in arrays is:" ${marks[@]}
+echo "To print all elements in arrays is:" ${marks[@]}
+
+# chmod u+x bash-scripting-array.txt
+# sh bash-scripting-array.txt
+
