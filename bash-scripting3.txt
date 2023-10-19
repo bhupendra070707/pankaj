@@ -1,0 +1,20 @@
+#! /usr/bin/bash
+# program on use case of passing argument
+
+#code to install docker
+ yum install $1 -y
+
+# code to start the docker services
+ service $1 start
+
+# code to add useraccount into dockerroot group
+usermod -a -G dockerroot $2
+
+# code to download a image from dockerhub
+ docker pull $3
+
+# code to create container
+  docker run $3
+
+# code to create container
+  docker run --detach $3
