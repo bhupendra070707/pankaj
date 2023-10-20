@@ -1,0 +1,10 @@
+example 1 Source on Docker Host
+
+FROM centos:centos
+MAINTAINER vikram @gmail.com
+RUN /bin/bash -c 'yum install -y Jenkins'
+CMD Service jenkins start
+EXPOSE 8080
+RUN mkdir /opt/files
+ADD /home/john/project/india.txt /opt/files/
+
