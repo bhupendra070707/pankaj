@@ -1,0 +1,10 @@
+FROM
+RUN < controller shell -c 'command'>
+
+FROM python
+RUN /bin/bash -c 'pip install git -y'
+
+FROM centos
+RUN /bin/bash -c 'yum install  git -y'
+
+
