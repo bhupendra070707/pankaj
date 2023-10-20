@@ -1,0 +1,9 @@
+
+package 'dockefr' do
+  action :install
+service :docker do
+  action :start
+
+ end
+ end
+
