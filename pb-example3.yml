@@ -1,0 +1,22 @@
+-
+  name: pb on use case of variable concept
+  hosts: all
+  vars:
+    a: 10
+    b: 20.50
+    c: "India is great"
+    d: "AP 28 DC 0505"
+  tasks:
+    -
+      name: code to create a file
+      file:
+        path: /opt/variable.txt
+        state: touch
+    -
+      name: code to write a message into file
+      lineinfile:
+        path: /opt/variable.txt
+        state: present
+        line: "The value of a is {{a}} and b is {{b}} and c is {{c}} and d is {{d}}"
+
+
