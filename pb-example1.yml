@@ -1,0 +1,30 @@
+
+-
+  name: pb on use case of file and line module
+  hosts: client1
+  tasks:
+    -
+      name: code to create a folder
+      file:
+        path: /opt/india
+        state: directory
+
+    - 
+       name: code to create a file
+       file:
+         path: /opt/india/russia.txt
+         state: touch
+
+    -
+      name: code to give execute permission
+      file:
+        path: /opt/india/russia.txt
+        mode: u+x
+
+    -
+      name: code to write a message
+      lineinfile:
+        path: /opt/india/russia.txt
+        line: 'HELLO WORLD'
+
+
