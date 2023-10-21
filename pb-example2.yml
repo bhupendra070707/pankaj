@@ -1,0 +1,15 @@
+
+-
+  name: Replace the word
+  hosts: client1
+  tasks:
+
+    -
+      name: replace the word
+      lifeinfile:
+        path: /opt/india/russia.txt
+        state: present
+        regexp: "HELLO WORLD"
+        line: "india is great"
+
+
