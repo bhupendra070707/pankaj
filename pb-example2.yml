@@ -4,8 +4,7 @@
   hosts: client1
   tasks:
 
-    -
-      name: replace the word
+    - name: replace the word
       lifeinfile:
         path: /opt/india/russia.txt
         state: present
