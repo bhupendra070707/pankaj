@@ -1,0 +1,11 @@
+#! /usr/bin/bash
+# program on use case of reading a data
+
+echo "Enter your name:"
+read sname
+echo "Enter your id:"
+read sid
+
+echo "================output===================="
+echo "Your name is $sname"
+echo "Your id is $sid"
