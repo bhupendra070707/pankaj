@@ -1,0 +1,27 @@
+-
+  name: pb for practice 
+  hosts: client1
+  tasks:
+    - name: Ensure apache is at the lstest version
+      yum:
+        name: httpd
+        state: latest
+
+    - name: write the apache config file
+      template:
+        src: /srv/httpd.j2
+        dest: /etc/httpd.conf
+
+    - name: update db servers
+      hosts: databases
+      remote-user: root
+      tasks:
+        - name: Ensure postgresql is at the latest version
+          yum:
+            name: postgresql
+            state: latest
+
+    - name: Ensure that postgresql is stared
+      service:
+        name: postgresql
+        state: started
