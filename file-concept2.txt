@@ -1,0 +1,11 @@
+#! /usr/bin/bash
+# program on use case of install ansible
+'yum' install ansible
+
+code for start service
+service start
+
+code to install git
+yum install git
+
+
